@@ -1,0 +1,35 @@
+/* Tailwind v4 */
+@import 'tailwindcss';
+
+/* Make sure the app fills the viewport */
+html,
+body,
+#app {
+  height: 100%;
+}
+
+/* Remove any background overlay pattern that may create diagonal lines */
+body {
+  margin: 0;
+  background-color: #0079bf; /* Trello blue */
+  background-image: none !important;
+}
+
+/* If diagonals come from pseudo-elements, kill them */
+body::before,
+body::after {
+  content: none !important;
+  background: none !important;
+}
+
+/* Ensure no invisible overlay captures clicks */
+#app,
+#app * {
+  pointer-events: auto;
+}
+
+/* Smoother rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
