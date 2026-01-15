@@ -9,6 +9,9 @@
 
 > A lightweight, Trello-style Kanban board built with Vue 3 + TypeScript, featuring a clean UI, smooth drag & drop, and persistent local storage.
 
+<p align="center">
+  <img src="docs/images/board.jpg" alt="Kanban board preview" width="800" />
+</p>
 ---
 
 ## Application Overview
